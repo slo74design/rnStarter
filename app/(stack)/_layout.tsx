@@ -13,7 +13,9 @@ const StackLayout = () => {
             <Stack.Screen name="home/index" options={{ title: "Home" }} />
             <Stack.Screen
                 name="products/index"
-                options={{ title: "Products" }}
+                options={{ title: "Products", headerStyle: {
+                    backgroundColor: '#faf5ff'
+                } }}
             />
             <Stack.Screen name="profile/index" options={{ title: "Profile" }} />
             <Stack.Screen
