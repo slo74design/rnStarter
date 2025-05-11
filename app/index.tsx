@@ -1,14 +1,18 @@
-import React from 'react'
-import { SafeAreaView, Text, View } from 'react-native'
+import { Redirect } from "expo-router";
+import React from "react";
 
 const App = () => {
-  return (
-    <SafeAreaView className='bg-yellow-100'>
-      <View className='m-10'>
-        <Text className='text-3xl font-work-bold'>Welcome Salva</Text>
-      </View>
-    </SafeAreaView>
-  )
-}
+    return <Redirect href="/home" />;
+    // return (
+    //     <SafeAreaView className="bg-secondary">
+    //         <View className="m-10">
+    //             <Text className="text-3xl font-work-bold text-primary">
+    //                 Welcome Salva
+    //             </Text>
+    //             <Link href="/products">Go to products</Link>
+    //         </View>
+    //     </SafeAreaView>
+    // );
+};
 
-export default App
+export default App;
