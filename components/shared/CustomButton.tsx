@@ -31,7 +31,7 @@ const CustomButton = ({
 
     return (
         <Pressable
-            className={`py-3 px-5 rounded-md ${bgcolor} active:opacity-70 ${className}`}
+            className={`${className} py-3 px-5 rounded-md ${bgcolor} active:opacity-70 `}
             onPress={onPress}
         >
             <Text

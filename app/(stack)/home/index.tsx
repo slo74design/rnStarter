@@ -5,8 +5,8 @@ import { SafeAreaView, View } from "react-native";
 
 const HomeScreen = () => {
     return (
-        <SafeAreaView className="bg-slate-500">
-            <View className="m-10">
+        <SafeAreaView>
+            <View className="p-10">
                 <Link href="/products" asChild>
                     <CustomButton
                         className="mb-5"
@@ -16,13 +16,23 @@ const HomeScreen = () => {
                         Link to products
                     </CustomButton>
                 </Link>
+
                 <CustomButton
-                    className="my-5"
+                    className="mb-5"
                     bgcolor="bg-slate-800"
                     txtcolor="text-slate-50"
-                    onPress={() => router.push("/products")}
+                    onPress={() => router.push("/profile")}
                 >
-                    Go to products
+                    Go to Profile
+                </CustomButton>
+
+                <CustomButton
+                    className="mb-5"
+                    bgcolor="bg-slate-800"
+                    txtcolor="text-slate-50"
+                    onPress={() => router.push("/settings")}
+                >
+                    Go to Settings
                 </CustomButton>
 
                 <CustomButton
