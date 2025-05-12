@@ -1,12 +1,12 @@
-import React from 'react'
-import { Text, View } from 'react-native'
+import React from "react";
+import { Text, View } from "react-native";
 
 const UserScreen = () => {
-  return (
-    <View>
-      <Text>UserScreen</Text>
-    </View>
-  )
-}
+    return (
+        <View className="bg-yellow-100">
+            <Text>UserScreen</Text>
+        </View>
+    );
+};
 
-export default UserScreen
+export default UserScreen;
