@@ -8,14 +8,18 @@ const StackLayout = () => {
                 animation: "fade",
                 headerShadowVisible: false,
                 contentStyle: { backgroundColor: "#fff" },
+                // headerShown: false,
             }}
         >
-            <Stack.Screen name="home/index" options={{ title: "Home" }} />
+            <Stack.Screen name="home/index" options={{ title: "Home Stack" }} />
             <Stack.Screen
                 name="products/index"
-                options={{ title: "Products", headerStyle: {
-                    backgroundColor: '#faf5ff'
-                } }}
+                options={{
+                    title: "Products",
+                    headerStyle: {
+                        backgroundColor: "#faf5ff",
+                    },
+                }}
             />
             <Stack.Screen name="profile/index" options={{ title: "Profile" }} />
             <Stack.Screen
